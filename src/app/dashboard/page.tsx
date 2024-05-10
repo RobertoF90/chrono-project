@@ -15,8 +15,8 @@ export default async function Page() {
         Dashboard
       </h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {projects.map(project => <div>
-          <div>{project.name}</div>
+        {projects.map((project,i) => <div key={i}>
+          <div >{project.name}</div>
           <div>{project.hours}</div>
         </div> )}
         {/* <Card title="Collected" value={totalPaidInvoices} type="collected" /> */}
